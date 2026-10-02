@@ -1,0 +1,11 @@
+external_id,name,email,phone,city,registered_at
+CUST-1001,Andi Saputra,andi.saputra@example.test,081234560001,Jakarta Selatan,2026-01-05
+CUST-1002,Rina Marlina,rina.marlina@example.test,081234560002,Bandung,2026-01-09
+CUST-1003,Fajar Hidayat,fajar.hidayat@example.test,081234560003,Surabaya,2026-01-15
+CUST-1004,Maya Putri,maya.putri@example.test,081234560004,Bekasi,2026-02-01
+CUST-1005,Dedi Kurniawan,dedi.kurniawan@example.test,081234560005,Malang,2026-02-12
+CUST-1006,Siti Rahma,siti.rahma@example.test,081234560006,Jakarta Barat,2026-02-20
+CUST-1007,Bagus Pratama,bagus.pratama@example.test,081234560007,Bandung,2026-03-04
+CUST-1008,Laras Wening,laras.wening@example.test,081234560008,Surabaya,2026-03-16
+CUST-1009,Nadia Safitri,nadia.safitri@example.test,081234560009,Jakarta Selatan,2026-04-02
+CUST-1010,Rizky Maulana,rizky.maulana@example.test,081234560010,Bekasi,2026-04-18

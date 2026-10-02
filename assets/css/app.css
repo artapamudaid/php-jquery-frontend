@@ -1,0 +1,178 @@
+:root {
+    --bg: #f5f7fb;
+    --panel: #ffffff;
+    --ink: #172033;
+    --muted: #64748b;
+    --line: #dbe3ee;
+    --accent: #0f766e;
+    --accent-2: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shell {
+    width: min(1180px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.page-header {
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.page-header p,
+.panel-title span,
+.status {
+    color: var(--muted);
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+.panel-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+
+.panel-title h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+label {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--muted);
+}
+
+button,
+select,
+input[type="file"] {
+    min-height: 38px;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #fff;
+    padding: 0 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:nth-of-type(2) {
+    background: var(--accent-2);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: .45;
+}
+
+select {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    background: #e7edf5;
+    border-radius: 999px;
+    margin-top: 16px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transition: width .2s ease;
+}
+
+.table-wrap {
+    overflow: auto;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th,
+td {
+    border-bottom: 1px solid var(--line);
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #eef3f8;
+}
+
+.empty {
+    text-align: center;
+    color: var(--muted);
+}
+
+@media print {
+    body {
+        background: #fff;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    #printArea,
+    #printArea * {
+        visibility: visible;
+    }
+
+    #printArea {
+        position: absolute;
+        inset: 0;
+        border: 0;
+        overflow: visible;
+    }
+
+    table {
+        min-width: 0;
+    }
+}
